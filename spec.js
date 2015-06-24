@@ -3,13 +3,13 @@ describe('basic calcular function list', function() {
   it('should add numbers', function() {
     browser.get('http://mbrittanya.github.io/grid-demo')
 
-    element(by.id('but1')).click();
+    element(by.id('but7')).click();
     element(by.id('butAdd')).click();
     element(by.id('but2')).click();
     element(by.id('butEq')).click();
 
     expect(element(by.binding('total')).getText()).
-        toEqual('3');
+        toEqual('9');
   });
 
   it('should subtract numbers', function() {
